@@ -1,0 +1,88 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Tablr } from '../Tablr'; // Adjust this path if needed
+
+<Meta title='Navigation Bars' component={Tablr} />
+
+## Navigation Bars
+
+Below are four different navigation bar examples.
+
+### Navbar 1
+
+<Canvas>
+  <Story name='Navbar 1'>
+    <div style={{ padding: '20px', backgroundColor: '#f0f0f0' }}>
+      <nav style={{
+        display: 'flex',
+        justifyContent: 'center',
+        backgroundColor: '#333',
+        padding: '10px'
+      }}>
+        <a href="#home" style={{ color: 'white', padding: '14px 20px', textDecoration: 'none' }}>Home</a>
+        <a href="#about" style={{ color: 'white', padding: '14px 20px', textDecoration: 'none' }}>About</a>
+        <a href="#services" style={{ color: 'white', padding: '14px 20px', textDecoration: 'none' }}>Services</a>
+        <a href="#contact" style={{ color: 'white', padding: '14px 20px', textDecoration: 'none' }}>Contact</a>
+      </nav>
+    </div>
+  </Story>
+</Canvas>
+
+### Navbar 2
+
+<Canvas>
+  <Story name='Navbar 2'>
+    <div style={{ padding: '20px', backgroundColor: '#f0f0f0' }}>
+      <nav style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        backgroundColor: '#282c34',
+        padding: '10px'
+      }}>
+        <a href="#home" style={{ color: 'white', padding: '10px', textDecoration: 'none' }}>Home</a>
+        <a href="#about" style={{ color: 'white', padding: '10px', textDecoration: 'none' }}>About</a>
+        <a href="#services" style={{ color: 'white', padding: '10px', textDecoration: 'none' }}>Services</a>
+        <a href="#contact" style={{ color: 'white', padding: '10px', textDecoration: 'none' }}>Contact</a>
+      </nav>
+    </div>
+  </Story>
+</Canvas>
+
+### Navbar 3
+
+<Canvas>
+  <Story name='Navbar 3'>
+    <div style={{ padding: '20px', backgroundColor: '#e0e0e0' }}>
+      <nav style={{
+        display: 'flex',
+        justifyContent: 'flex-end',
+        backgroundColor: '#444',
+        padding: '10px'
+      }}>
+        <a href="#home" style={{ color: 'white', padding: '10px', textDecoration: 'none' }}>Home</a>
+        <a href="#about" style={{ color: 'white', padding: '10px', textDecoration: 'none' }}>About</a>
+        <a href="#services" style={{ color: 'white', padding: '10px', textDecoration: 'none' }}>Services</a>
+        <a href="#contact" style={{ color: 'white', padding: '10px', textDecoration: 'none' }}>Contact</a>
+      </nav>
+    </div>
+  </Story>
+</Canvas>
+
+### Navbar 4
+
+<Canvas>
+  <Story name='Navbar 4'>
+    <div style={{ padding: '20px', backgroundColor: '#d0d0d0' }}>
+      <nav style={{
+        display: 'flex',
+        justifyContent: 'center',
+        backgroundColor: '#555',
+        padding: '10px'
+      }}>
+        <a href="#home" style={{ color: 'white', padding: '12px', textDecoration: 'none' }}>Home</a>
+        <a href="#about" style={{ color: 'white', padding: '12px', textDecoration: 'none' }}>About</a>
+        <a href="#services" style={{ color: 'white', padding: '12px', textDecoration: 'none' }}>Services</a>
+        <a href="#contact" style={{ color: 'white', padding: '12px', textDecoration: 'none' }}>Contact</a>
+      </nav>
+    </div>
+  </Story>
+</Canvas>

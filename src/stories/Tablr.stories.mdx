@@ -1,21 +1,69 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import { Tablr } from '../Tablr';
+import { Tablr } from '../Tablr'; // Adjust this path if needed
 
-<Meta title='Tablr' component={Tablr} />
+<Meta title='Tablr - Custom Tables' component={Tablr} />
 
-## Tablr
-#### A customizeable React table component
+## Tablr - Customizable React Table Component
+
+The `Tablr` component allows you to render customizable tables. Below are four different table configurations.
+
+### Table 1
 
 <Canvas>
-  <Story name='Default'>
+  <Story name='Table One'>
     <Tablr 
-      headers={['Col 1', 'Col 2', 'Col 3', 'Col 4', 'Col 5']}
+      headers={['Header 1', 'Header 2', 'Header 3']}
       rows={[
-        ['This', 'is', 'just', 'a', 'test'],
-        ['This', 'is', 'also', 'a', 'test'],
-        ['Just', 'a', 'little', 'more', 'data'],
-        ['Row', 'number', 'four', 'right', 'here'],
+        ['Data 1', 'Data 2', 'Data 3'],
+        ['Data A', 'Data B', 'Data C'],
+        ['Data X', 'Data Y', 'Data Z'],
       ]}
     />
   </Story>
 </Canvas>
+
+### Table 2
+
+<Canvas>
+  <Story name='Table Two'>
+    <Tablr 
+      headers={['Header A', 'Header B', 'Header C', 'Header D']}
+      rows={[
+        ['Row 1', 'Row 2', 'Row 3', 'Row 4'],
+        ['Row A', 'Row B', 'Row C', 'Row D'],
+      ]}
+    />
+  </Story>
+</Canvas>
+
+### Table 3
+
+<Canvas>
+  <Story name='Table Three'>
+    <Tablr 
+      headers={['Column 1', 'Column 2']}
+      rows={[
+        ['Entry 1', 'Entry 2'],
+        ['Entry A', 'Entry B'],
+        ['Entry X', 'Entry Y'],
+        ['Entry 1A', 'Entry 2A'],
+      ]}
+    />
+  </Story>
+</Canvas>
+
+### Table 4
+
+<Canvas>
+  <Story name='Table Four'>
+    <Tablr 
+      headers={['Item 1', 'Item 2', 'Item 3', 'Item 4']}
+      rows={[
+        ['Item 1', 'Item 2', 'Item 3', 'Item 4'],
+        ['Item A', 'Item B', 'Item C', 'Item D'],
+        ['Item X', 'Item Y', 'Item Z', 'Item W'],
+      ]}
+    />
+  </Story>
+</Canvas>
+
